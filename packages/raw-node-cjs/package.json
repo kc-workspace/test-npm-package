@@ -1,0 +1,11 @@
+{
+  "name": "@kcws/raw-node-cjs",
+  "version": "0.0.0-dev",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@kcws/dtcheck": "0.21.0"
+  }
+}

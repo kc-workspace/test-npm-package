@@ -1,0 +1,16 @@
+{
+  "name": "@kcws/raw-node-mjs",
+  "version": "0.0.0-dev",
+  "type": "commonjs",
+  "scripts": {
+    "build": "rspack build",
+    "start": "light-server --serve dist --port 4000"
+  },
+  "dependencies": {
+    "@kcws/dtcheck": "0.21.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.8",
+    "light-server": "2.9.1"
+  }
+}
