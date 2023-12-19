@@ -1,0 +1,32 @@
+name: Main
+on:
+  push:
+  schedule:
+    - cron: 1 0 * * *
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up source code
+        uses: actions/checkout@v4
+      - name: Set up Pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - name: Set up NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts
+          cache: pnpm
+      - name: Install
+        run: pnpm --recursive install
+      - name: Build
+        run: pnpm --recursive build
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: package
+          retention-days: 7
+          path: |
+            !packages/**/dist

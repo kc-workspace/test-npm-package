@@ -1,7 +1,7 @@
 {
   "name": "@kcws/raw-node-mjs",
   "version": "0.0.0-dev",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "build": "rspack build",
     "start": "light-server --serve dist --port 4000"
