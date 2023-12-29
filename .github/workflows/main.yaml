@@ -18,9 +18,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: pnpm
       - name: Install
-        run: pnpm --recursive install --no-lockfile --no-frozen-lockfile
+        run: pnpm --recursive install
       - name: Build
         run: pnpm --recursive build
       - name: Archive production artifacts
