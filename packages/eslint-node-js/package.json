@@ -1,0 +1,14 @@
+{
+  "name": "@kcws/eslint-node-js",
+  "version": "0.0.0-dev",
+  "type": "module",
+  "scripts": {
+    "build": "eslint ."
+  },
+  "dependencies": {
+    "eslint": "8.56.0"
+  },
+  "devDependencies": {
+    "@kcws/eslint-config": "v0.31.0"
+  }
+}
