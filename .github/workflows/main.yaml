@@ -20,7 +20,7 @@ jobs:
           node-version: lts/*
           cache: pnpm
       - name: Install
-        run: pnpm --recursive install
+        run: pnpm --recursive install --no-frozen-lockfile
       - name: Build
         run: pnpm --recursive build
       - name: Archive production artifacts

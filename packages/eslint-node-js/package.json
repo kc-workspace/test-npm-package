@@ -9,6 +9,6 @@
     "eslint": "8.56.0"
   },
   "devDependencies": {
-    "@kcws/eslint-config": "v0.31.0"
+    "@kcws/eslint-config": "*"
   }
 }

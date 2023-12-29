@@ -7,7 +7,7 @@
     "start": "light-server --serve dist --port 4000"
   },
   "dependencies": {
-    "@kcws/dtcheck": "0.25.1"
+    "@kcws/dtcheck": "*"
   },
   "devDependencies": {
     "@rspack/cli": "0.4.5",

@@ -6,6 +6,6 @@
     "build": "node index.js"
   },
   "dependencies": {
-    "@kcws/dtcheck": "0.25.1"
+    "@kcws/dtcheck": "*"
   }
 }
