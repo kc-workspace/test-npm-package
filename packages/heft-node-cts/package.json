@@ -1,0 +1,16 @@
+{
+  "name": "@kcws/heft-node-cts",
+  "version": "0.0.0-dev",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "module": "lib-esnext/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "heft build"
+  },
+  "devDependencies": {
+    "@kcws/eslint-config": "*",
+    "@kcws/node-rig": "*",
+    "@rushstack/heft": "0.63.5"
+  }
+}
