@@ -18,8 +18,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-      - name: Install
-        run: pnpm --recursive install
+      - name: Upgrade latest version
+        run: pnpm upgrade --recursive --workspace
       - name: Build
         run: pnpm --recursive build
       - name: Archive production artifacts
